@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.ViewReportCMController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="151.0" layoutY="57.0" prefHeight="46.0" prefWidth="190.0" style="-fx-background-color: yellow;" text="View Sales Report" textFill="#a62e2c">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Button layoutX="499.0" layoutY="348.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+    </children>
+
+</AnchorPane>

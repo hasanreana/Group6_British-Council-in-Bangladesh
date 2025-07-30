@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.CreateOrEditPolicyCMController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="122.0" layoutY="36.0" prefHeight="26.0" prefWidth="302.0" text="Do you want to ....?">
+            <font>
+                <Font name="Arial Black" size="21.0" />
+            </font>
+        </Label>
+        <Button layoutX="190.0" layoutY="96.0" mnemonicParsing="false" onAction="#createPolicyButtonOnClicked" text="Create a new policy" />
+        <Button layoutX="178.0" layoutY="147.0" mnemonicParsing="false" onAction="#editPolicyButtonOnClicked" text="Edit an existing policy" />
+        <Button layoutX="51.0" layoutY="323.0" mnemonicParsing="false" onAction="#goBackToDashboardButtonOnClick" prefHeight="39.0" prefWidth="61.0" style="-fx-background-color: white;" text="Back" />
+    </children>
+
+</AnchorPane>
