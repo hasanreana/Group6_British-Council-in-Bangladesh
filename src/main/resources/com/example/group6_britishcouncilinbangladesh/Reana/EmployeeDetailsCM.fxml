@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.EmployeeDetailsCMController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="218.0" layoutY="39.0" style="-fx-background-color: orange;" text="Employee Details">
+            <font>
+                <Font name="System Bold Italic" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="94.0" layoutY="106.0" text="Employee Name :" />
+        <Label layoutX="94.0" layoutY="133.0" text="Employee Salary :" />
+        <Label layoutX="94.0" layoutY="161.0" text="Working Years :" />
+        <Label layoutX="94.0" layoutY="191.0" text="Old Designation:" />
+        <Label layoutX="94.0" layoutY="223.0" text="New Designation:" />
+        <TextField fx:id="yearsTextField" layoutX="214.0" layoutY="157.0" />
+        <TextField fx:id="salaryTextField" layoutX="214.0" layoutY="129.0" />
+        <TextField fx:id="nameTextField" layoutX="214.0" layoutY="99.0" />
+        <TextField fx:id="oldDeTextField" layoutX="214.0" layoutY="187.0" />
+        <TextField fx:id="newDeTextField" layoutX="214.0" layoutY="219.0" />
+        <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#backButtonOnClicked" text="Back" />
+        <Button layoutX="218.0" layoutY="265.0" mnemonicParsing="false" onAction="#addButton" text="ADD" />
+        <Button layoutX="508.0" layoutY="348.0" mnemonicParsing="false" onAction="#pdfButton" text="PDF" />
+    </children>
+
+</AnchorPane>

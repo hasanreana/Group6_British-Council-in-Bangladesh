@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.DashboardCMController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+
+        <Label layoutX="76.0" layoutY="7.0" prefHeight="68.0" prefWidth="534.0" text="Managing Director Dashboard">
+            <font>
+                <Font name="Arial Black" size="31.0" />
+            </font>
+        </Label>
+        <Button layoutX="164.0" layoutY="81.0" mnemonicParsing="false" onAction="#viewReportOnButtonClicked" prefHeight="42.0" prefWidth="198.0" style="-fx-background-color: white;" text="View Report">
+            <font>
+                <Font name="System Bold Italic" size="19.0" />
+            </font>
+        </Button>
+        <Button layoutX="164.0" layoutY="133.0" mnemonicParsing="false" onAction="#createOrEditPolicyOnButtonClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-color: white;" text="Policy">
+            <font>
+                <Font name="System Bold Italic" size="19.0" />
+            </font>
+        </Button>
+        <Button layoutX="164.0" layoutY="185.0" mnemonicParsing="false" onAction="#viewBudgetOnButtonClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-color: white;" text="Budget">
+            <font>
+                <Font name="System Bold Italic" size="19.0" />
+            </font>
+        </Button>
+        <Button layoutX="164.0" layoutY="236.0" mnemonicParsing="false" onAction="#scheduleMeetingOnButtonClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-color: white;" text=" Schedule Meeting">
+            <font>
+                <Font name="System Bold Italic" size="19.0" />
+            </font>
+        </Button>
+        <Button layoutX="163.0" layoutY="289.0" mnemonicParsing="false" onAction="#assignTaskOnButtonClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-color: white;" text="Assign Task">
+            <font>
+                <Font name="System Bold Italic" size="19.0" />
+            </font>
+        </Button>
+        <Button layoutX="163.0" layoutY="394.0" mnemonicParsing="false" onAction="#approveDecisionOnButtonClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-color: white;" text=" Decisions Making">
+            <font>
+                <Font name="System Bold Italic" size="19.0" />
+            </font>
+        </Button>
+        <Button layoutX="163.0" layoutY="342.0" mnemonicParsing="false" onAction="#employeeDetailsOnButtonClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-color: white;" text="Employee Details">
+            <font>
+                <Font name="System Bold Italic" size="19.0" />
+            </font>
+        </Button>
+        <Button layoutX="164.0" layoutY="453.0" mnemonicParsing="false" onAction="#reviewEmailsOnButtonClick" prefHeight="42.0" prefWidth="198.0" style="-fx-background-color: white;" text="Review Emails">
+            <font>
+                <Font name="System Bold Italic" size="19.0" />
+            </font>
+        </Button>
+        <Button layoutX="595.0" layoutY="463.0" mnemonicParsing="false" onAction="#logOutOnButtonClicked" prefHeight="42.0" prefWidth="114.0" style="-fx-background-color: white;" text="Log Out">
+            <font>
+                <Font name="System Bold Italic" size="19.0" />
+            </font>
+        </Button>
+    </children>
+
+
+</AnchorPane>
