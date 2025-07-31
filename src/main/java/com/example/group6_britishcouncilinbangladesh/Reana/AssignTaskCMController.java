@@ -5,6 +5,8 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 
+import java.io.IOException;
+
 public class AssignTaskCMController
 {
     @javafx.fxml.FXML
@@ -21,7 +23,8 @@ public class AssignTaskCMController
     }
 
     @javafx.fxml.FXML
-    public void goBackToDashboardButtonOnClick(ActionEvent actionEvent) {
+    public void goBackToDashboardButtonOnClick(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/ManagingDirectorDeshboard.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML

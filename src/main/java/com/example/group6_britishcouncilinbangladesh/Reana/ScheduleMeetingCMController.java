@@ -3,6 +3,8 @@ package com.example.group6_britishcouncilinbangladesh.Reana;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.io.IOException;
+
 public class ScheduleMeetingCMController
 {
     @javafx.fxml.FXML
@@ -25,7 +27,8 @@ public class ScheduleMeetingCMController
     }
 
     @javafx.fxml.FXML
-    public void goBackToDashboardOnBUttonClick(ActionEvent actionEvent) {
+    public void goBackToDashboardOnBUttonClick(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/ManagingDirectorDeshboard.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML

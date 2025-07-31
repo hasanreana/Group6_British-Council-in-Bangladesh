@@ -3,6 +3,8 @@ package com.example.group6_britishcouncilinbangladesh.Reana;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.io.IOException;
+
 public class BudgetCMController
 {
     @javafx.fxml.FXML
@@ -41,7 +43,8 @@ public class BudgetCMController
     }
 
     @javafx.fxml.FXML
-    public void backButtonOnAction(ActionEvent actionEvent) {
+    public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/ManagingDirectorDeshboard.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
