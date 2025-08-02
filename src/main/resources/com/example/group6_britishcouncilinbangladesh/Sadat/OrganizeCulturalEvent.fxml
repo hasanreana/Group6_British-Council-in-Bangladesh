@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="15.0" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group6_britishcouncilinbangladesh.Sadat.OrganizeCulturalEventController">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <!-- Title -->
+    <Label text="Organize Cultural Event">
+        <font>
+            <Font size="24" name="System Bold"/>
+        </font>
+    </Label>
+
+    <!-- Venue Input -->
+    <TextField fx:id="venueField" promptText="Enter event venue"/>
+
+    <!-- Date Picker -->
+    <DatePicker fx:id="eventDatePicker"/>
+
+    <!-- Budget Input -->
+    <TextField fx:id="budgetField" promptText="Enter budget amount (e.g., 30000)"/>
+
+    <!-- Submit Button -->
+    <Button fx:id="submitButton" text="Submit Event" onAction="#handleSubmitButton"/>
+
+    <!-- Message Display -->
+    <Label fx:id="messageLabel" text="" wrapText="true"/>
+</VBox>
+
+
+

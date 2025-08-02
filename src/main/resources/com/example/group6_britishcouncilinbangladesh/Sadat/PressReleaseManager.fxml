@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="15.0" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group6_britishcouncilinbangladesh.Sadat.PressReleaseManagerController">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <!-- Title -->
+    <Label text="Manage Press Releases">
+        <font>
+            <Font size="24" name="System Bold"/>
+        </font>
+    </Label>
+
+    <!-- Press Release Content Input -->
+    <TextArea fx:id="contentArea" promptText="Enter press release content" prefHeight="200" wrapText="true"/>
+
+    <!-- Media Attachments Input -->
+    <TextField fx:id="mediaField" promptText="Enter media attachment link (optional)"/>
+    <!-- Validate Compliance Button -->
+    <Button fx:id="validateButton" text="Validate Compliance" onAction="#handleValidateCompliance"/>
+
+    <!-- Scheduled Release Date -->
+    <DatePicker fx:id="releaseDatePicker" promptText="Select release date"/>
+
+    <!-- Submit Button -->
+    <Button fx:id="submitButton" text="Submit Press Release" onAction="#handleSubmitPressRelease"/>
+
+    <!-- Message Display -->
+    <Label fx:id="messageLabel" text="" wrapText="true"/>
+</VBox>
