@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="15.0" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group6_britishcouncilinbangladesh.Sadat.NetworkSecurityAuditController">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <!-- Title -->
+    <Label text="Network Security Audit">
+        <font>
+            <Font size="24" name="System Bold"/>
+        </font>
+    </Label>
+
+    <!-- Run Vulnerability Scan Button -->
+    <Button fx:id="runScanButton" text="Run Vulnerability Scan" onAction="#handleRunScan"/>
+
+    <!-- Display Scan Results -->
+    <TextArea fx:id="scanResultsArea" promptText="Scan results will appear here" prefHeight="200" wrapText="true" editable="false"/>
+
+    <!-- Flag Critical Risks Button -->
+    <Button fx:id="flagRisksButton" text="Flag Critical Risks" onAction="#handleFlagRisks"/>
+
+    <!-- Apply Patches Button -->
+    <Button fx:id="applyPatchesButton" text="Apply Patches" onAction="#handleApplyPatches"/>
+
+    <!-- Log Results Button -->
+    <Button fx:id="logResultsButton" text="Log Results" onAction="#handleLogResults"/>
+
+    <!-- Message Display -->
+    <Label fx:id="messageLabel" text="" wrapText="true"/>
+</VBox>

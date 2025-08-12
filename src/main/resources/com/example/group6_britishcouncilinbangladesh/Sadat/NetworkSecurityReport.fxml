@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="15.0" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group6_britishcouncilinbangladesh.Sadat.NetworkSecurityReportController">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <!-- Title -->
+    <Label text="Generate Network Security Report">
+        <font>
+            <Font size="24" name="System Bold"/>
+
+        </font>
+    </Label>
+    <!-- Report Parameters -->
+    <TextField fx:id="reportIdField" promptText="Enter report ID"/>
+
+    <!-- Report Date Selection -->
+    <DatePicker fx:id="reportDatePicker" promptText="Select report date"/>
+
+    <!-- Generate Report Button -->
+    <Button fx:id="generateReportButton" text="Generate Report" onAction="#handleGenerateReport"/>
+
+    <!-- Report Display Area -->
+    <TextArea fx:id="reportDisplayArea" promptText="Report will be displayed here" prefHeight="200" wrapText="true" editable="false"/>
+
+    <!-- Message Display -->
+    <Label fx:id="messageLabel" text="" wrapText="true"/>
+</VBox>
+
+
+

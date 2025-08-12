@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="15.0" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.group6_britishcouncilinbangladesh.Sadat.UserAccessManagementController">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <!-- Title -->
+    <Label text="User Access Management">
+        <font>
+            <Font size="24" name="System Bold"/>
+        </font>
+    </Label>
+
+    <!-- Username Input -->
+    <TextField fx:id="usernameField" promptText="Enter username"/>
+
+    <!-- Role Selection -->
+    <ComboBox fx:id="roleComboBox">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Admin"/>
+                <String fx:value="User"/>
+                <String fx:value="Guest"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <!-- Activate/Deactivate Button -->
+    <Button fx:id="activateDeactivateButton" text="Activate User" onAction="#handleActivateDeactivateUser"/>
+
+    <!-- Message Display -->
+    <Label fx:id="messageLabel" text="" wrapText="true"/>
+</VBox>
