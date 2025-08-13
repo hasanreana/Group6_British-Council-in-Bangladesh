@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Solaiman_Munna.CertificateReissueStuAController">
+   <children>
+      <Text layoutX="54.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Certificate Reissue" textAlignment="CENTER" wrappingWidth="491.73663330078125">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name : " />
+      <TextField fx:id="NameTextFeild" layoutX="95.0" layoutY="94.0" promptText="Enter Your Name" />
+      <Text layoutX="289.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passport Number :" />
+      <TextField fx:id="PassportTextFeild" layoutX="396.0" layoutY="94.0" promptText="Enter Passport number" />
+      <TextArea fx:id="IsuueTextArea" layoutX="54.0" layoutY="169.0" prefHeight="90.0" prefWidth="492.0" />
+      <Text layoutX="190.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Briefly Describe Your Problem-">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="243.0" layoutY="281.0" mnemonicParsing="false" onAction="#RequestButton" prefHeight="50.0" prefWidth="114.0" text="Submit Request">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="508.0" layoutY="349.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="35.0" prefWidth="75.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="AlertLabelCR" layoutX="110.0" layoutY="169.0" prefHeight="90.0" prefWidth="358.0" />
+   </children>
+</AnchorPane>

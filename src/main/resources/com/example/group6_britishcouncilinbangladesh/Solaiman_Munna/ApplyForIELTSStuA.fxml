@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Solaiman_Munna.ApplyForIELTSStuAController">
+   <children>
+      <Text layoutX="54.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apply For IELTS" textAlignment="CENTER" wrappingWidth="491.73663330078125">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Text>
+      <TableView fx:id="SessionTableView" layoutX="32.0" layoutY="100.0" prefHeight="267.0" prefWidth="308.0">
+        <columns>
+          <TableColumn fx:id="TimeColSTV" prefWidth="88.79998779296875" text="Time" />
+          <TableColumn fx:id="VenueColSTV" prefWidth="136.0" text="Venue" />
+            <TableColumn fx:id="CapacityColSTV" prefWidth="84.7999267578125" text="Capacity" />
+        </columns>
+      </TableView>
+      <Button layoutX="409.0" layoutY="200.0" mnemonicParsing="false" onAction="#RegisterButton" prefHeight="50.0" prefWidth="85.0" text="Register">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="363.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Your Desired time for registration, then press Register Button" wrappingWidth="211.8984375">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="504.0" layoutY="327.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="39.0" prefWidth="70.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
