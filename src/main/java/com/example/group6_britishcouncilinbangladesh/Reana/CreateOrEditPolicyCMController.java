@@ -16,10 +16,12 @@ public class CreateOrEditPolicyCMController
     }
 
     @javafx.fxml.FXML
-    public void createPolicyButtonOnClicked(ActionEvent actionEvent) {
+    public void createPolicyButtonOnClicked(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/CreatePolicyCM.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void editPolicyButtonOnClicked(ActionEvent actionEvent) {
+    public void editPolicyButtonOnClicked(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/EditPolicyCM.fxml", actionEvent);
     }
 }
