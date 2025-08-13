@@ -4,20 +4,19 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.DashboardFinanceManagerController">
    <children>
       <Label layoutX="169.0" layoutY="21.0" prefHeight="27.0" prefWidth="262.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Finance Officer Dashboard" textFill="#10b7de" />
       <Button layoutX="526.0" layoutY="364.0" mnemonicParsing="false" onAction="#LogOutOnActionButton" text="LogOut" textFill="#0682d4" />
 
       <Button layoutX="213.0" layoutY="68.0" mnemonicParsing="false" onAction="#financialReportButtons" prefHeight="38.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Creating a Financial Report" />
-      <Button layoutX="213.0" layoutY="119.0" mnemonicParsing="false" onAction="#creatingBillsButton" prefHeight="27.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Creating Bills" />
+      <Button layoutX="213.0" layoutY="113.0" mnemonicParsing="false" onAction="#creatingBillsButton" prefHeight="27.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Creating Bills" />
       <Button layoutX="213.0" layoutY="154.0" mnemonicParsing="false" onAction="#pendingBillsButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Pending Bills Record" />
-      <Button layoutX="213.0" layoutY="187.0" mnemonicParsing="false" onAction="#employeeSalaryButton" prefHeight="26.0" prefWidth="167.0" style="-fx-background-color: pink;" text="Records of Employee Salary " />
+      <Button layoutX="216.0" layoutY="254.0" mnemonicParsing="false" onAction="#employeeSalaryButton" prefHeight="26.0" prefWidth="167.0" style="-fx-background-color: pink;" text="Records of Employee Salary " />
       <Button layoutX="213.0" layoutY="220.0" mnemonicParsing="false" onAction="#budgetsRecordButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Budgets Records" />
-      <Button layoutX="213.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleLatePaymentsButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Handles Late Payments" />
-      <Button layoutX="213.0" layoutY="286.0" mnemonicParsing="false" onAction="#expanseRecordsButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Records of Expanse" />
+      <Button layoutX="213.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleLatePaymentsButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Handles Late Payments" />
+      <Button layoutX="213.0" layoutY="322.0" mnemonicParsing="false" onAction="#expanseRecordsButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Track Expanse" />
 
-      <Button layoutX="213.0" layoutY="320.0" mnemonicParsing="false" onAction="#insuranceRecordsButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Insurance Records" />
+      <Button layoutX="213.0" layoutY="187.0" mnemonicParsing="false" onAction="#managePayrollButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Manage Payroll" />
    </children>
 </AnchorPane>

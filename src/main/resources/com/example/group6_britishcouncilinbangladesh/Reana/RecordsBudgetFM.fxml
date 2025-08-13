@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="512.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.RecordsBudgetFMController">
+    <children>
+        <Label layoutX="321.0" layoutY="14.0" prefHeight="48.0" prefWidth="122.0" text="BUDGETING">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="65.0" layoutY="91.0" text="No of Venues:" />
+        <Label layoutX="65.0" layoutY="121.0" text="Venues Payment:" />
+        <Label layoutX="65.0" layoutY="153.0" text="Records Date :" />
+        <TextField fx:id="noVenueTF" layoutX="199.0" layoutY="87.0" prefHeight="26.0" prefWidth="122.0" />
+        <TextField fx:id="PaymentTF" layoutX="199.0" layoutY="125.0" prefHeight="26.0" prefWidth="122.0" />
+        <TextField fx:id="DateTextField" layoutX="199.0" layoutY="157.0" prefHeight="26.0" prefWidth="122.0" />
+        <Label layoutX="410.0" layoutY="91.0" text="No of Employee :" />
+        <Label layoutX="403.0" layoutY="129.0" text="Employee Salary :" />
+        <Label layoutX="410.0" layoutY="161.0" text="Power Supply Bill :" />
+        <TextField fx:id="NoEmployeeTextField" layoutX="520.0" layoutY="86.0" prefHeight="26.0" prefWidth="122.0" />
+        <TextField fx:id="SalaryTextField" layoutX="520.0" layoutY="125.0" prefHeight="26.0" prefWidth="122.0" />
+        <TextField fx:id="billTextField" layoutX="520.0" layoutY="157.0" prefHeight="26.0" prefWidth="122.0" />
+        <Button layoutX="193.0" layoutY="227.0" mnemonicParsing="false" onAction="#seeInfoButtonOnClicked" text="See Information Record" />
+        <Button layoutX="508.0" layoutY="227.0" mnemonicParsing="false" onAction="#totalBudgetButtonOnClicked" text="Total Budget of a Month" />
+        <Button layoutX="685.0" layoutY="227.0" mnemonicParsing="false" onAction="#sendMagButtonOnClicked" text="Send msg For Others Information" />
+        <Button layoutX="39.0" layoutY="227.0" mnemonicParsing="false" onAction="#addNewInfoButtonOnClicked" text="Add New Information" />
+        <Line endX="34.20001220703125" endY="270.6000061035156" layoutX="461.0" layoutY="181.0" startX="34.20001220703125" startY="57.79998779296875" strokeWidth="3.0" />
+        <Line endX="34.20001220703125" endY="272.9999694824219" layoutX="637.0" layoutY="180.0" startX="34.20001220703125" startY="57.79998779296875" strokeWidth="3.0" />
+        <Label fx:id="budgetLabel" layoutX="520.0" layoutY="295.0" prefHeight="102.0" prefWidth="146.0" style="-fx-background-color: yellow;" text="Budget" />
+        <Label fx:id="msgLabel" layoutX="721.0" layoutY="295.0" prefHeight="102.0" prefWidth="157.0" style="-fx-background-color: lime;" text="Msg" />
+        <Button layoutX="419.0" layoutY="486.0" mnemonicParsing="false" onAction="#goToActivitiesPageButtonOnClicked" text="Go To activities Page" />
+      <TableView fx:id="TableView" layoutX="2.0" layoutY="269.0" prefHeight="194.0" prefWidth="490.0">
+         <columns>
+            <TableColumn fx:id="NoVenueTC" prefWidth="90.0" text="No of Venue" />
+            <TableColumn fx:id="PaymentTC" prefWidth="94.0" text="Venue Payment" />
+            <TableColumn fx:id="NoEmployeeTC" prefWidth="87.99998474121094" text="No Employee" />
+            <TableColumn fx:id="SalaryTC" prefWidth="46.4000244140625" text="Salary" />
+            <TableColumn fx:id="DateTC" prefWidth="91.199951171875" text="Date" />
+            <TableColumn fx:id="BillTC" prefWidth="78.4000305175781" text="Power Bill" />
+         </columns>
+      </TableView>
+    </children>
+
+</AnchorPane>

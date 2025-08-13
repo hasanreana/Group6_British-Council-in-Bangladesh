@@ -40,7 +40,9 @@ public class DashboardFinanceManagerController
     public void financialReportButtons(ActionEvent actionEvent) {
     }
 
+
+
     @javafx.fxml.FXML
-    public void insuranceRecordsButton(ActionEvent actionEvent) {
+    public void managePayrollButton(ActionEvent actionEvent) {
     }
 }

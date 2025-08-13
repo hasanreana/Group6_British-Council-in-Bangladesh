@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.EmployeeSalaryRecordsFMController">
+    <children>
+        <Label layoutX="244.0" layoutY="20.0" prefHeight="30.0" prefWidth="193.0" style="-fx-background-color: orange;" text="Records Of Employee Salary">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="53.0" layoutY="69.0" text="Employee Name:" />
+        <Label layoutX="53.0" layoutY="104.0" text="Employee ID:" />
+        <Label layoutX="53.0" layoutY="133.0" text="Employee Salary:" />
+        <TextField fx:id="employeeNameTextField" layoutX="151.0" layoutY="65.0" prefHeight="26.0" prefWidth="130.0" />
+        <TextField fx:id="idTextField" layoutX="151.0" layoutY="100.0" prefHeight="26.0" prefWidth="130.0" />
+        <TextField fx:id="salaryTextField" layoutX="151.0" layoutY="129.0" prefHeight="26.0" prefWidth="130.0" />
+        <Label layoutX="393.0" layoutY="69.0" prefHeight="18.0" prefWidth="118.0" text="Date Of Joining:" />
+        <Label layoutX="382.0" layoutY="95.0" prefHeight="26.0" prefWidth="141.0" text="Working Days Of a Month:" />
+        <TextField fx:id="daysMonthTextField" layoutX="530.0" layoutY="95.0" prefHeight="26.0" prefWidth="130.0" />
+        <DatePicker fx:id="dayPicker" layoutX="524.0" layoutY="65.0" prefHeight="26.0" prefWidth="142.0" />
+        <Label layoutX="16.0" layoutY="191.0" prefHeight="18.0" prefWidth="126.0" text="Employee Working day:" />
+        <TextField fx:id="workingDayTextField" layoutX="151.0" layoutY="187.0" prefHeight="26.0" prefWidth="130.0" />
+        <Label layoutX="382.0" layoutY="129.0" prefHeight="26.0" prefWidth="141.0" text="Employee Overtime:" />
+        <Label layoutX="382.0" layoutY="160.0" prefHeight="26.0" prefWidth="141.0" text="Employee Overtime Days:" />
+        <TextField fx:id="overTimeTextField" layoutX="530.0" layoutY="129.0" prefHeight="26.0" prefWidth="130.0" />
+        <TextField fx:id="overtimeDayTextField" layoutX="530.0" layoutY="160.0" prefHeight="26.0" prefWidth="130.0" />
+        <Label layoutX="341.0" layoutY="200.0" prefHeight="26.0" prefWidth="202.0" text="Employee Overtime Salary per hours:" />
+        <TextField fx:id="perHourOvertimeSalaryTextField" layoutX="546.0" layoutY="200.0" prefHeight="26.0" prefWidth="118.0" />
+        <Button layoutX="534.0" layoutY="258.0" mnemonicParsing="false" onAction="#overTimeSalaryButtonOnClicked" prefHeight="26.0" prefWidth="161.0" text="Employee Overtime Salary" />
+        <Label fx:id="salaryLabel" layoutX="514.0" layoutY="409.0" prefHeight="74.0" prefWidth="251.0" style="-fx-background-color: pink;" text="Salary" />
+        <Button layoutX="40.0" layoutY="258.0" mnemonicParsing="false" onAction="#newEmployeeInfoButtonOnClicked" text="Add a new employee Info" />
+        <Button layoutX="216.0" layoutY="258.0" mnemonicParsing="false" onAction="#showEmployeeInfoButtonOnClicked" text="Show Employee Info " />
+        <TableView fx:id="TableView" layoutX="28.0" layoutY="306.0" prefHeight="185.0" prefWidth="406.0">
+            <columns>
+                <TableColumn fx:id="NameTC" prefWidth="99.19998550415039" text="Employee Name" />
+                <TableColumn fx:id="IDTC" prefWidth="84.0" text="Employee ID" />
+                <TableColumn fx:id="SalaryTC" prefWidth="106.40000915527344" text="Employee Salary" />
+                <TableColumn fx:id="dateTC" prefWidth="139.199951171875" text="Date of Joining" />
+            </columns>
+        </TableView>
+        <Button layoutX="539.0" layoutY="292.0" mnemonicParsing="false" onAction="#annualSalaryButtonOnClicked" prefHeight="26.0" prefWidth="152.0" text="Employee Annual Salary" />
+        <Button layoutX="535.0" layoutY="327.0" mnemonicParsing="false" onAction="#deductionSalaryButtonOnClicked" text="Employee Deduction Salary" />
+        <Label layoutX="28.0" layoutY="165.0" prefHeight="18.0" prefWidth="142.0" text="Employee Income Tex:" />
+        <TextField fx:id="texTextField" layoutX="151.0" layoutY="160.0" prefHeight="26.0" prefWidth="130.0" />
+        <Button layoutX="538.0" layoutY="364.0" mnemonicParsing="false" onAction="#texSalaryButtonOnClicked" text="Employee Salary After Tex" />
+        <Line endX="32.39996337890625" endY="218.20001220703125" layoutX="442.0" layoutY="305.0" startX="32.39996337890625" startY="-49.0" stroke="#801e96" strokeWidth="5.0" />
+        <Button layoutX="350.0" layoutY="562.0" mnemonicParsing="false" onAction="#goToActivitiesPageButtonOnClicked" text="Go to Activities Page" />
+    </children>
+
+</AnchorPane>
