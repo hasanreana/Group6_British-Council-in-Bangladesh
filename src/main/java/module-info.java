@@ -3,6 +3,6 @@ module com.example.group6_britishcouncilinbangladesh {
     requires javafx.fxml;
 
 
-    opens com.example.group6_britishcouncilinbangladesh to javafx.fxml;
+    opens com.example.group6_britishcouncilinbangladesh.Reana to javafx.fxml;
     exports com.example.group6_britishcouncilinbangladesh;
 }

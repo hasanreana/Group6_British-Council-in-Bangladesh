@@ -2,6 +2,8 @@ package com.example.group6_britishcouncilinbangladesh.Reana;
 
 import javafx.event.ActionEvent;
 
+import java.io.IOException;
+
 public class DashboardCMController
 {
     @javafx.fxml.FXML
@@ -9,38 +11,47 @@ public class DashboardCMController
     }
 
     @javafx.fxml.FXML
-    public void viewBudgetOnButtonClick(ActionEvent actionEvent) {
+    public void viewBudgetOnButtonClick(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/BudgetCM.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void createOrEditPolicyOnButtonClick(ActionEvent actionEvent) {
+    public void createOrEditPolicyOnButtonClick(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/CreateOrEditPolicyCM.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void logOutOnButtonClicked(ActionEvent actionEvent) {
+    public void logOutOnButtonClicked(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/LogIn.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void viewReportOnButtonClicked(ActionEvent actionEvent) {
+    public void viewReportOnButtonClicked(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/ViewReportCM.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void approveDecisionOnButtonClick(ActionEvent actionEvent) {
+    public void approveDecisionOnButtonClick(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DecisionMakingCM.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void assignTaskOnButtonClick(ActionEvent actionEvent) {
+    public void assignTaskOnButtonClick(ActionEvent actionEvent) throws IOException{
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/AssignTaskCM.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void scheduleMeetingOnButtonClick(ActionEvent actionEvent) {
+    public void scheduleMeetingOnButtonClick(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/ScheduleMeetingCM.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void employeeDetailsOnButtonClick(ActionEvent actionEvent) {
+    public void employeeDetailsOnButtonClick(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/EmployeeDetailsCM.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void reviewEmailsOnButtonClick(ActionEvent actionEvent) {
+    public void reviewEmailsOnButtonClick(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/ReviewEmailsCM.fxml", actionEvent);
     }
 }

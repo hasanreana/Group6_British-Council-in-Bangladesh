@@ -28,7 +28,7 @@ public class CreatePolicyCMController
 
     @javafx.fxml.FXML
     public void goBackToDashboardButtonOnClick(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/ManagingDirectorDeshboard.fxml", actionEvent);
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardCM.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML

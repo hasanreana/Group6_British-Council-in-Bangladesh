@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.PendingBillsFMController">
+   <children>
+      <Label layoutX="188.0" layoutY="22.0" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: lime;" text="Pending Bills and Details">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="81.0" prefHeight="18.0" prefWidth="130.0" text="Venues ID:" />
+      <Label layoutX="72.0" layoutY="185.0" prefHeight="18.0" prefWidth="166.0" text="Total Month( Electricity) :" />
+      <Label layoutX="72.0" layoutY="106.0" prefHeight="18.0" prefWidth="166.0" text="Venues payment :" />
+      <Label layoutX="73.0" layoutY="216.0" prefHeight="18.0" prefWidth="166.0" text="Per Month Bill (Electricity) :" />
+      <TextField fx:id="IDVenuesTextField" layoutX="256.0" layoutY="77.0" />
+      <TextField fx:id="NameMonthTextField1" layoutX="256.0" layoutY="159.0" />
+      <TextField fx:id="TotalVenuesTextField2" layoutX="256.0" layoutY="133.0" />
+      <TextField fx:id="venuesPaymentTextField3" layoutX="256.0" layoutY="103.0" />
+      <Button layoutX="199.0" layoutY="257.0" mnemonicParsing="false" onAction="#amountPendingBillButtonOnClicked" text="Total Amount Of Pending Bills" />
+      <Label fx:id="amountLabel" layoutX="392.0" layoutY="239.0" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: yellow;" text="Amount" />
+      <Button layoutX="76.0" layoutY="257.0" mnemonicParsing="false" onAction="#addButtonOnAction" text="ADD Details" />
+      <TableView fx:id="TableView" layoutX="94.0" layoutY="306.0" prefHeight="182.0" prefWidth="385.0">
+         <columns>
+            <TableColumn fx:id="IdTC" prefWidth="90.0" text="Venue ID" />
+            <TableColumn fx:id="paymentTC" prefWidth="94.0" text="Venue Payment" />
+            <TableColumn fx:id="MonthNameTC" prefWidth="90.4000244140625" text="Month Name" />
+            <TableColumn fx:id="BillTC" prefWidth="108.80001220703127" text="Electricity Bill" />
+         </columns>
+      </TableView>
+      <Label layoutX="72.0" layoutY="162.0" prefHeight="18.0" prefWidth="166.0" text="Name of Month( Electricity) :" />
+      <Label layoutX="73.0" layoutY="136.0" prefHeight="18.0" prefWidth="166.0" text="Total Venues  :" />
+      <TextField fx:id="TotalMonthTextField11" layoutX="256.0" layoutY="181.0" />
+      <TextField fx:id="biillMonthTextField12" layoutX="256.0" layoutY="212.0" />
+      <Button layoutX="527.0" layoutY="436.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+   </children>
+</AnchorPane>
