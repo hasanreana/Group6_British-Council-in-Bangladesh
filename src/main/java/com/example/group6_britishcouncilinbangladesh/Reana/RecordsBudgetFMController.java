@@ -6,6 +6,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
+
 public class RecordsBudgetFMController
 {
     @javafx.fxml.FXML
@@ -48,7 +50,8 @@ public class RecordsBudgetFMController
     }
 
     @javafx.fxml.FXML
-    public void goToActivitiesPageButtonOnClicked(ActionEvent actionEvent) {
+    public void goToActivitiesPageButtonOnClicked(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardFinanceManager.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML

@@ -2,6 +2,8 @@ package com.example.group6_britishcouncilinbangladesh.Reana;
 
 import javafx.event.ActionEvent;
 
+import java.io.IOException;
+
 public class DashboardFinanceManagerController
 {
     @javafx.fxml.FXML
@@ -9,40 +11,49 @@ public class DashboardFinanceManagerController
     }
 
     @javafx.fxml.FXML
-    public void LogOutOnActionButton(ActionEvent actionEvent) {
+    public void LogOutOnActionButton(ActionEvent actionEvent)throws IOException  {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardFinanceManager.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void creatingBillsButton(ActionEvent actionEvent) {
+    public void creatingBillsButton(ActionEvent actionEvent)throws IOException  {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardFinanceManager.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void expanseRecordsButton(ActionEvent actionEvent) {
+    public void expanseRecordsButton(ActionEvent actionEvent)throws IOException  {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardFinanceManager.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void pendingBillsButton(ActionEvent actionEvent) {
+    public void pendingBillsButton(ActionEvent actionEvent)throws IOException  {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardFinanceManager.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void employeeSalaryButton(ActionEvent actionEvent) {
+    public void employeeSalaryButton(ActionEvent actionEvent)throws IOException  {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardFinanceManager.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void handleLatePaymentsButton(ActionEvent actionEvent) {
+    public void handleLatePaymentsButton(ActionEvent actionEvent)throws IOException  {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardFinanceManager.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void budgetsRecordButton(ActionEvent actionEvent) {
+    public void budgetsRecordButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardFinanceManager.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void financialReportButtons(ActionEvent actionEvent) {
+    public void financialReportButtons(ActionEvent actionEvent)throws IOException  {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardFinanceManager.fxml", actionEvent);
     }
 
 
 
     @javafx.fxml.FXML
-    public void managePayrollButton(ActionEvent actionEvent) {
+    public void managePayrollButton(ActionEvent actionEvent)throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardFinanceManager.fxml", actionEvent);
     }
 }

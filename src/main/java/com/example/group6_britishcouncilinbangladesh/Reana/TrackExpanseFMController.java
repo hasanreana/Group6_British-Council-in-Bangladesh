@@ -3,6 +3,8 @@ package com.example.group6_britishcouncilinbangladesh.Reana;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
+import java.io.IOException;
+
 public class TrackExpanseFMController
 {
     @javafx.fxml.FXML
@@ -29,6 +31,7 @@ public class TrackExpanseFMController
     }
 
     @javafx.fxml.FXML
-    public void ReturnHomeOnActionButton(ActionEvent actionEvent) {
+    public void ReturnHomeOnActionButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/DashboardFinanceManager.fxml", actionEvent);
     }
 }

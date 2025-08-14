@@ -6,10 +6,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.PendingBillsFMController">
+<AnchorPane prefHeight="503.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.PendingBillsFMController">
    <children>
       <Label layoutX="188.0" layoutY="22.0" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: lime;" text="Pending Bills and Details">
          <font>
@@ -24,9 +24,9 @@
       <TextField fx:id="NameMonthTextField1" layoutX="256.0" layoutY="159.0" />
       <TextField fx:id="TotalVenuesTextField2" layoutX="256.0" layoutY="133.0" />
       <TextField fx:id="venuesPaymentTextField3" layoutX="256.0" layoutY="103.0" />
-      <Button layoutX="199.0" layoutY="257.0" mnemonicParsing="false" onAction="#amountPendingBillButtonOnClicked" text="Total Amount Of Pending Bills" />
-      <Label fx:id="amountLabel" layoutX="392.0" layoutY="239.0" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: yellow;" text="Amount" />
-      <Button layoutX="76.0" layoutY="257.0" mnemonicParsing="false" onAction="#addButtonOnAction" text="ADD Details" />
+      <Button layoutX="485.0" layoutY="133.0" mnemonicParsing="false" onAction="#amountPendingBillButtonOnClicked" text="Total Amount Of Pending Bills" />
+      <Label fx:id="amountLabel" layoutX="489.0" layoutY="175.0" prefHeight="62.0" prefWidth="166.0" style="-fx-background-color: yellow;" text="Amount" />
+      <Button layoutX="302.0" layoutY="252.0" mnemonicParsing="false" onAction="#addButtonOnAction" text="ADD Information" />
       <TableView fx:id="TableView" layoutX="94.0" layoutY="306.0" prefHeight="182.0" prefWidth="385.0">
          <columns>
             <TableColumn fx:id="IdTC" prefWidth="90.0" text="Venue ID" />
@@ -40,5 +40,7 @@
       <TextField fx:id="TotalMonthTextField11" layoutX="256.0" layoutY="181.0" />
       <TextField fx:id="biillMonthTextField12" layoutX="256.0" layoutY="212.0" />
       <Button layoutX="527.0" layoutY="436.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+      <Button layoutX="54.0" layoutY="251.0" mnemonicParsing="false" onAction="#editProjectInfoButtonOnClicked" prefHeight="26.0" prefWidth="174.0" text="Edit Project Informaion " />
+      <Line endX="94.00003051757812" endY="101.0" layoutX="362.0" layoutY="175.0" startX="94.00003051757812" startY="-82.99999237060547" stroke="#0b4d17b0" strokeWidth="4.0" />
    </children>
 </AnchorPane>

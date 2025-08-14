@@ -25,7 +25,7 @@
         <Label layoutX="393.0" layoutY="69.0" prefHeight="18.0" prefWidth="118.0" text="Date Of Joining:" />
         <Label layoutX="382.0" layoutY="95.0" prefHeight="26.0" prefWidth="141.0" text="Working Days Of a Month:" />
         <TextField fx:id="daysMonthTextField" layoutX="530.0" layoutY="95.0" prefHeight="26.0" prefWidth="130.0" />
-        <DatePicker fx:id="dayPicker" layoutX="524.0" layoutY="65.0" prefHeight="26.0" prefWidth="142.0" />
+        <DatePicker fx:id="daydatePicker" layoutX="524.0" layoutY="65.0" prefHeight="26.0" prefWidth="142.0" />
         <Label layoutX="16.0" layoutY="191.0" prefHeight="18.0" prefWidth="126.0" text="Employee Working day:" />
         <TextField fx:id="workingDayTextField" layoutX="151.0" layoutY="187.0" prefHeight="26.0" prefWidth="130.0" />
         <Label layoutX="382.0" layoutY="129.0" prefHeight="26.0" prefWidth="141.0" text="Employee Overtime:" />
@@ -37,7 +37,6 @@
         <Button layoutX="534.0" layoutY="258.0" mnemonicParsing="false" onAction="#overTimeSalaryButtonOnClicked" prefHeight="26.0" prefWidth="161.0" text="Employee Overtime Salary" />
         <Label fx:id="salaryLabel" layoutX="514.0" layoutY="409.0" prefHeight="74.0" prefWidth="251.0" style="-fx-background-color: pink;" text="Salary" />
         <Button layoutX="40.0" layoutY="258.0" mnemonicParsing="false" onAction="#newEmployeeInfoButtonOnClicked" text="Add a new employee Info" />
-        <Button layoutX="216.0" layoutY="258.0" mnemonicParsing="false" onAction="#showEmployeeInfoButtonOnClicked" text="Show Employee Info " />
         <TableView fx:id="TableView" layoutX="28.0" layoutY="306.0" prefHeight="185.0" prefWidth="406.0">
             <columns>
                 <TableColumn fx:id="NameTC" prefWidth="99.19998550415039" text="Employee Name" />
@@ -53,6 +52,7 @@
         <Button layoutX="538.0" layoutY="364.0" mnemonicParsing="false" onAction="#texSalaryButtonOnClicked" text="Employee Salary After Tex" />
         <Line endX="32.39996337890625" endY="218.20001220703125" layoutX="442.0" layoutY="305.0" startX="32.39996337890625" startY="-49.0" stroke="#801e96" strokeWidth="5.0" />
         <Button layoutX="350.0" layoutY="562.0" mnemonicParsing="false" onAction="#goToActivitiesPageButtonOnClicked" text="Go to Activities Page" />
+      <Label fx:id="outputLable" layoutX="231.0" layoutY="234.0" prefHeight="54.0" prefWidth="174.0" wrapText="true" />
     </children>
 
 </AnchorPane>

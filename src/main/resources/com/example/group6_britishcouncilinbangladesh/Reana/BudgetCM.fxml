@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.BudgetCMController">
+<AnchorPane prefHeight="506.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.BudgetCMController">
     <children>
         <Label layoutX="126.0" layoutY="29.0" prefHeight="35.0" prefWidth="402.0" text="Review Budget Proposals">
             <font>
@@ -34,7 +34,7 @@
         <Label layoutX="49.0" layoutY="164.0" text="Amount :" />
         <Label layoutX="49.0" layoutY="197.0" text="Status :" />
         <Button layoutX="307.0" layoutY="262.0" mnemonicParsing="false" onAction="#addButtonOnAction" text="ADD" />
-        <TableView fx:id="budgetTableView" layoutX="24.0" layoutY="308.0" prefHeight="136.0" prefWidth="394.0">
+        <TableView fx:id="budgetTableView" layoutX="34.0" layoutY="357.0" prefHeight="136.0" prefWidth="394.0">
             <columns>
                 <TableColumn fx:id="proposalIdTC" prefWidth="90.0" text="Proposal ID" />
                 <TableColumn fx:id="departmentTC" prefWidth="94.0" text="Department" />
