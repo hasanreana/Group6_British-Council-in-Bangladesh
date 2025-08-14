@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class BudgetCMController
 {
     @javafx.fxml.FXML
-    private TableColumn amountTC;
+    private TableColumn<BudgetInfo,Integer> amountTC;
     @javafx.fxml.FXML
     private Label outputLable;
     @javafx.fxml.FXML

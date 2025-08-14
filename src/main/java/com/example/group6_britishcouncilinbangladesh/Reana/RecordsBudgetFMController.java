@@ -1,10 +1,7 @@
 package com.example.group6_britishcouncilinbangladesh.Reana;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.io.IOException;
 
@@ -47,6 +44,9 @@ public class RecordsBudgetFMController
 
     @javafx.fxml.FXML
     public void sendMagButtonOnClicked(ActionEvent actionEvent) {
+        Alert a= new Alert(Alert.AlertType.INFORMATION);
+        a.setContentText("Request Sent Successfully!");
+        a.showAndWait();
     }
 
     @javafx.fxml.FXML
@@ -64,5 +64,21 @@ public class RecordsBudgetFMController
 
     @javafx.fxml.FXML
     public void totalBudgetButtonOnClicked(ActionEvent actionEvent) {
+        String xStr = noVenueTF.getText();
+        String yStr = NoEmployeeTC.getText();
+        String zStr = PaymentTF.getText();
+        String wStr = SalaryTextField.getText();
+        String rStr = billTextField.getText();
+        int xVal = Integer.parseInt(xStr);
+        int yVal = Integer.parseInt(yStr);
+        int zVal = Integer.parseInt(zStr);
+        int wVal = Integer.parseInt(wStr);
+        int rVal = Integer.parseInt(rStr);
+
+
+        int sum = (xVal*zVal)+(yVal*zVal)+rVal;
+
+        String resultStr = Integer.toString(sum);
+        budgetLabel.setText("Monthly Budget= " + resultStr);
     }
 }
