@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.group6_britishcouncilinbangladesh.Reana.FinancialReportFMController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="202.0" layoutY="30.0" prefHeight="39.0" prefWidth="185.0" style="-fx-background-color: lime;" text="Creating a Financial Reports">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="246.0" layoutY="348.0" mnemonicParsing="false" onAction="#goToActivitiesPageButtonOnClicked" text="Go to Activities page" />
+    </children>
+
+</AnchorPane>

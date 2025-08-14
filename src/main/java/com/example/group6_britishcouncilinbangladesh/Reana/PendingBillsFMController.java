@@ -6,10 +6,35 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+
+
 
 public class PendingBillsFMController
 {
+    public static PendingBills bills = null;
+    static List<PendingBills> pendingbills = new ArrayList<>();
+
+    static {
+//
+        try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("Information/materialproducts.bin"))) {
+            pendingbills.clear();
+            List<PendingBills> loadedList = (List<PendingBills>) inputStream.readObject();
+            pendingbills.addAll(loadedList);
+
+//            userList = (List<User>) inputStream.readObject();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @javafx.fxml.FXML
     private TextField IDVenuesTextField;
     @javafx.fxml.FXML
@@ -17,21 +42,21 @@ public class PendingBillsFMController
     @javafx.fxml.FXML
     private Label amountLabel;
     @javafx.fxml.FXML
-    private TableColumn paymentTC;
+    private TableColumn<PendingBills,Integer> paymentTC;
     @javafx.fxml.FXML
     private TextField biillMonthTextField12;
     @javafx.fxml.FXML
-    private TableColumn MonthNameTC;
+    private TableColumn<PendingBills,String> MonthNameTC;
     @javafx.fxml.FXML
     private TextField NameMonthTextField1;
     @javafx.fxml.FXML
-    private TableColumn IdTC;
+    private TableColumn<PendingBills,Integer> IdTC;
     @javafx.fxml.FXML
     private TextField TotalVenuesTextField2;
     @javafx.fxml.FXML
-    private TableColumn BillTC;
+    private TableColumn<PendingBills,Integer> BillTC;
     @javafx.fxml.FXML
-    private TableView TableView;
+    private TableView<PendingBills> TableView;
     @javafx.fxml.FXML
     private TextField TotalMonthTextField11;
 

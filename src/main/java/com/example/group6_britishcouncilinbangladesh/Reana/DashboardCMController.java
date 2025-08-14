@@ -22,7 +22,7 @@ public class DashboardCMController
 
     @javafx.fxml.FXML
     public void logOutOnButtonClicked(ActionEvent actionEvent) throws IOException{
-        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Reana/LogIn.fxml", actionEvent);
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/LogIn.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML

@@ -12,8 +12,8 @@
       <Button layoutX="213.0" layoutY="68.0" mnemonicParsing="false" onAction="#financialReportButtons" prefHeight="38.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Creating a Financial Report" />
       <Button layoutX="213.0" layoutY="113.0" mnemonicParsing="false" onAction="#creatingBillsButton" prefHeight="27.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Creating Bills" />
       <Button layoutX="213.0" layoutY="154.0" mnemonicParsing="false" onAction="#pendingBillsButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Pending Bills Record" />
-      <Button layoutX="216.0" layoutY="254.0" mnemonicParsing="false" onAction="#employeeSalaryButton" prefHeight="26.0" prefWidth="167.0" style="-fx-background-color: pink;" text="Records of Employee Salary " />
-      <Button layoutX="213.0" layoutY="220.0" mnemonicParsing="false" onAction="#budgetsRecordButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Budgets Records" />
+      <Button layoutX="216.0" layoutY="254.0" mnemonicParsing="false" onAction="#employeeSalaryRecordsButton" prefHeight="26.0" prefWidth="167.0" style="-fx-background-color: pink;" text="Records of Employee Salary " />
+      <Button layoutX="213.0" layoutY="220.0" mnemonicParsing="false" onAction="#recordsBudgetButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Budgets Records" />
       <Button layoutX="213.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleLatePaymentsButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Handles Late Payments" />
       <Button layoutX="213.0" layoutY="322.0" mnemonicParsing="false" onAction="#expanseRecordsButton" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: pink;" text="Track Expanse" />
 
