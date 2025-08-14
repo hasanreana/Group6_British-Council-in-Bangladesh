@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Solaiman_Munna.ProvideFeedbackStuAController">
+   <children>
+      <Text layoutX="54.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feedback" textAlignment="CENTER" wrappingWidth="491.73663330078125">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="FeedBackTextArea" layoutX="29.0" layoutY="73.0" prefHeight="200.0" prefWidth="380.0" promptText="Enter Your Feedback" />
+      <ComboBox fx:id="RatingCombobox" layoutX="425.0" layoutY="73.0" prefWidth="150.0" promptText="Rating" />
+      <Button layoutX="237.0" layoutY="281.0" mnemonicParsing="false" onAction="#SubmitButton" prefHeight="46.0" prefWidth="125.0" text="Submit Feedback">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="520.0" layoutY="349.0" mnemonicParsing="false" onAction="#BackButton" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="AlertLabel" layoutX="425.0" layoutY="110.0" prefHeight="155.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
