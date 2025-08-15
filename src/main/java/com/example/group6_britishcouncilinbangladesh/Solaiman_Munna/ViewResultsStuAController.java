@@ -2,28 +2,48 @@ package com.example.group6_britishcouncilinbangladesh.Solaiman_Munna;
 
 import com.example.group6_britishcouncilinbangladesh.Reana.SceneSwitcher;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
-public class ViewResultsStuAController
-{
-    @javafx.fxml.FXML
-    private Label AlertLabelTR;
-    @javafx.fxml.FXML
-    private TextField PassportNoTextFeild;
+public class ViewResultsStuAController {
 
-    @javafx.fxml.FXML
+    @FXML private Label AlertLabelTR;
+    @FXML private TextField PassportNoTextFeild;
+
+    @FXML
     public void initialize() {
+
+        Results.loadFromFile();
+        AlertLabelTR.setWrapText(true);
+        AlertLabelTR.setMaxWidth(420);
+        AlertLabelTR.setText("");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void ViewResultButton(ActionEvent actionEvent) {
+        String passport = PassportNoTextFeild.getText();
+        if (passport == null || passport.isBlank()) {
+            AlertLabelTR.setText("Please enter your passport number.");
+            return;
+        }
+
+
+        Results.loadFromFile();
+        String score = Results.getScore(passport.trim());
+
+        AlertLabelTR.setText(score == null
+                ? "Result not published yet for: " + passport.trim()
+                : "Your IELTS overall score: " + score);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void BackButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/DashboardStudentApplicant.fxml", actionEvent);
+        SceneSwitcher.switchTo(
+                "/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/DashboardStudentApplicant.fxml",
+                actionEvent
+        );
     }
 }

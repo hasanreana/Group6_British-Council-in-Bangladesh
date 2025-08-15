@@ -15,10 +15,16 @@ public class WithdrawApplicationStuAController
 
     @javafx.fxml.FXML
     public void initialize() {
+
+        ActiveAppLabel.setText(
+                "ActiveStatus:- \nYou have registered for session-1280 \nVenue-DHK1(Banani Mentors) \ndate - 2025.12.12");
+
     }
 
     @javafx.fxml.FXML
     public void WithdrawButton(ActionEvent actionEvent) {
+        ActiveAppLabel.setText("ActiveStatus:-Null");
+        AlertLabel.setText("Withdraw Successful");
     }
 
     @javafx.fxml.FXML

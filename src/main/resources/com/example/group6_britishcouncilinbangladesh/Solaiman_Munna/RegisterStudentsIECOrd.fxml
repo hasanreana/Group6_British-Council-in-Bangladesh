@@ -25,8 +25,8 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Text>
-      <TextField fx:id="PssportNumberTextFeild" layoutX="384.0" layoutY="104.0" promptText="Passport number" />
-      <Text layoutX="294.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passport No. :">
+      <TextField fx:id="PssportNumberTextFeild" layoutX="373.0" layoutY="104.0" promptText="Passport number" />
+      <Text layoutX="283.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passport No. :">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
