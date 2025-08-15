@@ -34,11 +34,11 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Button>
-      <Button layoutX="483.0" layoutY="336.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="40.0" prefWidth="78.0" text="Back">
+      <Button layoutX="507.0" layoutY="336.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="40.0" prefWidth="78.0" text="Back">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <Label fx:id="AlertLabelRU" layoutX="228.0" layoutY="287.0" prefHeight="98.0" prefWidth="254.0" />
+      <Label fx:id="AlertLabelRU" layoutX="272.0" layoutY="287.0" prefHeight="98.0" prefWidth="211.0" />
    </children>
 </AnchorPane>

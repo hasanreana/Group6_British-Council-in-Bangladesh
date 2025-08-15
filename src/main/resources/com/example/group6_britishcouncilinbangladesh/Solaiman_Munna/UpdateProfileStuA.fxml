@@ -28,7 +28,7 @@
         <Text layoutX="82.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
         <PasswordField fx:id="SNewPasswordFeild" layoutX="368.0" layoutY="198.0" promptText="Enter NEW Password" />
         <Text layoutX="311.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
-        <Button layoutX="225.0" layoutY="322.0" mnemonicParsing="false" onAction="#ChangeButtonS" prefHeight="36.0" prefWidth="150.0" text="Submit Changes">
+        <Button layoutX="418.0" layoutY="262.0" mnemonicParsing="false" onAction="#ChangeButtonS" prefHeight="36.0" prefWidth="150.0" text="Submit Changes">
             <font>
                 <Font name="System Bold" size="13.0" />
             </font>
@@ -38,7 +38,7 @@
                 <Font name="System Bold Italic" size="17.0" />
             </font>
         </Button>
-        <Label fx:id="ValidationLabel" layoutX="82.0" layoutY="85.0" prefHeight="155.0" prefWidth="458.0" />
+        <Label fx:id="ValidationLabel" layoutX="26.0" layoutY="292.0" prefHeight="94.0" prefWidth="365.0" />
       <TextField fx:id="NewNameTextFeild1" layoutX="232.0" layoutY="254.0" promptText="Enter Passport Number" />
       <Text layoutX="130.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passport Number :" />
     </children>

@@ -3,6 +3,7 @@ package com.example.group6_britishcouncilinbangladesh.Solaiman_Munna;
 import com.example.group6_britishcouncilinbangladesh.Reana.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
@@ -15,6 +16,8 @@ public class RegisterStudentsIECOrdController
     private ComboBox SessionCombobox;
     @javafx.fxml.FXML
     private TextField PssportNumberTextFeild;
+    @javafx.fxml.FXML
+    private Label AlertLabelR;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -22,6 +22,8 @@ public class StudentVerificationIECOrdController
     private TableColumn PassportColVt;
     @javafx.fxml.FXML
     private ComboBox StatusCombobox;
+    @javafx.fxml.FXML
+    private Label AlertLabelVS;
 
     @javafx.fxml.FXML
     public void initialize() {

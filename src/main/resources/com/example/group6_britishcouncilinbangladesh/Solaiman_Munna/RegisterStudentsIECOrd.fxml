@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -47,5 +48,6 @@
             <Font name="System Bold" size="11.0" />
          </font>
       </Button>
+      <Label fx:id="AlertLabelR" layoutX="209.0" layoutY="259.0" prefHeight="61.0" prefWidth="182.0" />
    </children>
 </AnchorPane>

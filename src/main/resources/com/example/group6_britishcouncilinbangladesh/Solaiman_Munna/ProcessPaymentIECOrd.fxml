@@ -44,6 +44,6 @@
             </font>
         </Button>
         <Label fx:id="PassportLabel" layoutX="381.0" layoutY="79.0" prefHeight="18.0" prefWidth="158.0" />
-      <Label fx:id="AlertLabelPP" layoutX="141.0" layoutY="200.0" prefHeight="126.0" prefWidth="391.0" />
+      <Label fx:id="AlertLabelPP" layoutX="310.0" layoutY="304.0" prefHeight="70.0" prefWidth="185.0" />
     </children>
 </AnchorPane>
