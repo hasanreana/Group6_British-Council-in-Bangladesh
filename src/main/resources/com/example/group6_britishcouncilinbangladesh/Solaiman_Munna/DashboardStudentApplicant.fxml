@@ -14,7 +14,7 @@
       </Text>
       <Button layoutX="54.0" layoutY="78.0" mnemonicParsing="false" onAction="#WithdrawApplicationButton" prefHeight="45.0" prefWidth="155.0" text="Withdraw Application" />
       <Button layoutX="54.0" layoutY="131.0" mnemonicParsing="false" onAction="#ApplyforIELTSButton" prefHeight="45.0" prefWidth="155.0" text="Apply for IELTS" />
-      <Button layoutX="54.0" layoutY="186.0" mnemonicParsing="false" onAction="#CancelTextBookingButton" prefHeight="45.0" prefWidth="155.0" text="Cancel Test Booking" />
+      <Button layoutX="54.0" layoutY="186.0" mnemonicParsing="false" onAction="#RescheduleIELTSButton" prefHeight="45.0" prefWidth="155.0" text="Reschedule IELTS Test" />
       <Button layoutX="54.0" layoutY="239.0" mnemonicParsing="false" onAction="#ViewTestResultsButton" prefHeight="45.0" prefWidth="155.0" text="View Test Results" />
       <Button layoutX="390.0" layoutY="78.0" mnemonicParsing="false" onAction="#UpdateProfileButton" prefHeight="45.0" prefWidth="155.0" text="Update Profile" />
       <Button layoutX="390.0" layoutY="131.0" mnemonicParsing="false" onAction="#MakePaymentButton" prefHeight="45.0" prefWidth="155.0" text="Make Payment" />

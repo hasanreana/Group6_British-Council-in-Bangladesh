@@ -51,8 +51,9 @@ public class DashboardStudentApplicantController
         SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/WithdrawApplicationStuA.fxml", actionEvent);
     }
 
+
     @javafx.fxml.FXML
-    public void CancelTextBookingButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/CancelIELTSStuA.fxml", actionEvent);
+    public void RescheduleIELTSButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/ RescheduleIELTSTestStuA.fxml", actionEvent);
     }
 }
