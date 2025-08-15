@@ -22,6 +22,10 @@ public class LogInController
 
     private final String reana = "Reana";
     private final String reanapassword = "1234";
+    private final String student = "MunnaS";
+    private final String studentpassword = "1234";
+    private final String Coord = "MunnaCoord";
+    private final String Coordpassword = "1234";
 
 
 
@@ -50,7 +54,38 @@ public class LogInController
                 errorLabel.setText("Error loading the next screen.");
                 e.printStackTrace();
             }
-        } else {
+        }
+        if(username.equals(student) && password.equals(studentpassword)) {
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                        "/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/DashboardStudentApplicant.fxml"));
+                Parent root = loader.load();
+
+                Stage stage = (Stage) usernameTextField.getScene().getWindow();
+                stage.setScene(new Scene(root));
+                stage.show();
+
+            } catch (IOException e) {
+                errorLabel.setText("Error loading the next screen.");
+                e.printStackTrace();
+            }
+        }
+        if(username.equals(Coord) && password.equals(Coordpassword)) {
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                        "/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/DashboardIELTScord.fxml"));
+                Parent root = loader.load();
+
+                Stage stage = (Stage) usernameTextField.getScene().getWindow();
+                stage.setScene(new Scene(root));
+                stage.show();
+
+            } catch (IOException e) {
+                errorLabel.setText("Error loading the next screen.");
+                e.printStackTrace();
+            }
+        }
+        else {
             errorLabel.setText("Incorrect username or password. Please try again.");
         }
     }

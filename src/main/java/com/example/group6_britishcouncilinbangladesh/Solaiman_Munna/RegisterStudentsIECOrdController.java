@@ -1,8 +1,11 @@
 package com.example.group6_britishcouncilinbangladesh.Solaiman_Munna;
 
+import com.example.group6_britishcouncilinbangladesh.Reana.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class RegisterStudentsIECOrdController
 {
@@ -22,10 +25,12 @@ public class RegisterStudentsIECOrdController
     }
 
     @javafx.fxml.FXML
-    public void BackButton(ActionEvent actionEvent) {
+    public void BackButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/DashboardIELTScord.fxml", actionEvent);
     }
 
     @javafx.fxml.FXML
-    public void ViewRegisteredStudentsButton(ActionEvent actionEvent) {
+    public void ViewRegisteredStudentsButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/RegisteredStudentsRS.fxml", actionEvent);
     }
 }

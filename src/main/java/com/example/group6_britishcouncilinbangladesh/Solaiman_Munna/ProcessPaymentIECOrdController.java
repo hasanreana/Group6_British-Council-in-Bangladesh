@@ -1,7 +1,10 @@
 package com.example.group6_britishcouncilinbangladesh.Solaiman_Munna;
 
+import com.example.group6_britishcouncilinbangladesh.Reana.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+
+import java.io.IOException;
 
 public class ProcessPaymentIECOrdController
 {
@@ -35,6 +38,7 @@ public class ProcessPaymentIECOrdController
     }
 
     @javafx.fxml.FXML
-    public void BackButtonPP(ActionEvent actionEvent) {
+    public void BackButtonPP(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/DashboardIELTScord.fxml", actionEvent);
     }
 }

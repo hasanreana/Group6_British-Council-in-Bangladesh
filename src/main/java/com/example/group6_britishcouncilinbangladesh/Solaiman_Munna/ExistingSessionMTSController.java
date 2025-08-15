@@ -1,8 +1,11 @@
 package com.example.group6_britishcouncilinbangladesh.Solaiman_Munna;
 
+import com.example.group6_britishcouncilinbangladesh.Reana.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+
+import java.io.IOException;
 
 public class ExistingSessionMTSController
 {
@@ -22,6 +25,7 @@ public class ExistingSessionMTSController
     }
 
     @javafx.fxml.FXML
-    public void BackButtonES(ActionEvent actionEvent) {
+    public void BackButtonES(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/ManageTestSessionIECOrd.fxml", actionEvent);
     }
 }
