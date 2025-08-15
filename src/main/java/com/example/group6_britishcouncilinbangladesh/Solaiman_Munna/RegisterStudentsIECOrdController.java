@@ -21,10 +21,27 @@ public class RegisterStudentsIECOrdController
 
     @javafx.fxml.FXML
     public void initialize() {
+        SessionCombobox.getItems().addAll("9.00 AM","2.30 PM","6.30 PM");
     }
 
     @javafx.fxml.FXML
     public void RegisterButton(ActionEvent actionEvent) {
+        String name = StudentNameTextFeild.getText();
+        String passport = PssportNumberTextFeild.getText();
+        String session = (String) SessionCombobox.getValue();
+        String venue = "DHK-01(Banani Mentors)";
+
+        if (name.isEmpty() || passport.isEmpty() || session.isEmpty()) {
+            AlertLabelR.setText("Please fill all the fields");
+            return;
+        }
+        StudentDetails student = new StudentDetails(name, passport, session, venue);
+        StudentData.addStudent(student);
+
+        AlertLabelR.setText("Student registered successfully");
+        StudentNameTextFeild.clear();
+        PssportNumberTextFeild.clear();
+        SessionCombobox.getSelectionModel().clearSelection();
     }
 
     @javafx.fxml.FXML

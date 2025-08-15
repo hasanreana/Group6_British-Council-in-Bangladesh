@@ -3,56 +3,40 @@ package com.example.group6_britishcouncilinbangladesh.Solaiman_Munna;
 public class StudentDetails {
     private String name;
     private String passportNumber;
-    private String paymentStatus;
-    private String score;
-    private String identityVerified;
+    private String session;
+    private String venue;
 
-    public StudentDetails(String score, String name, String passportNumber, String paymentStatus, String identityVerified) {
-        this.score = score;
+    public StudentDetails(String name, String passportNumber, String session, String venue) {
         this.name = name;
         this.passportNumber = passportNumber;
-        this.paymentStatus = paymentStatus;
-        this.identityVerified = identityVerified;
-    }
-
-    public String getScore() {
-        return score;
-    }
-
-    public void setScore(String score) {
-        this.score = score;
+        this.session = session;
+        this.venue = venue;
     }
 
     public String getName() {
         return name;
     }
+    public String getPassportNumber() {
+        return passportNumber;
+    }
+    public String getSession() {
+        return session;
+    }
+    public String getVenue() {
+        return venue;
+    }
 
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getPassportNumber() {
-        return passportNumber;
-    }
-
     public void setPassportNumber(String passportNumber) {
         this.passportNumber = passportNumber;
     }
-
-    public String getPaymentStatus() {
-        return paymentStatus;
+    public void setSession(String session) {
+        this.session = session;
     }
-
-    public void setPaymentStatus(String paymentStatus) {
-        this.paymentStatus = paymentStatus;
-    }
-
-    public String getIdentityVerified() {
-        return identityVerified;
-    }
-
-    public void setIdentityVerified(String identityVerified) {
-        this.identityVerified = identityVerified;
+    public void setVenue(String venue) {
+        this.venue = venue;
     }
 
     @Override
@@ -60,9 +44,8 @@ public class StudentDetails {
         return "StudentDetails{" +
                 "name='" + name + '\'' +
                 ", passportNumber='" + passportNumber + '\'' +
-                ", paymentStatus='" + paymentStatus + '\'' +
-                ", score='" + score + '\'' +
-                ", identityVerified='" + identityVerified + '\'' +
+                ", session='" + session + '\'' +
+                ", venue='" + venue + '\'' +
                 '}';
     }
 }
