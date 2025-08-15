@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.group6_britishcouncilinbangladesh.Solaiman_Munna.RecordIncidentIECOrdController">
+   <children>
+      <Text layoutX="94.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Record Incident Report" textAlignment="CENTER" wrappingWidth="411.73675537109375">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="ExamDatePicker" layoutX="187.0" layoutY="100.0" promptText="Pick Exam Date" />
+      <Text layoutX="14.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick the date of Incident :" wrappingWidth="185.1495361328125">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invigilator Name :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="InvigilatorNameTextFeild" layoutX="140.0" layoutY="144.0" promptText="Type Here!" />
+      <Button layoutX="138.0" layoutY="256.0" mnemonicParsing="false" onAction="#ReportButton" prefHeight="58.0" prefWidth="98.0" text="Report">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Text layoutX="14.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate Name :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="CandidateNameTextFeild" layoutX="140.0" layoutY="187.0" promptText="Type Here!" />
+      <Button layoutX="489.0" layoutY="323.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="51.0" prefWidth="74.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -52,7 +52,7 @@ public class DashboardIELTScordController
     }
 
     @javafx.fxml.FXML
-    public void IssueAdmitCardsButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("", actionEvent);
+    public void IncidentReportingButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/RecordIncidentIECOrd.fxml", actionEvent);
     }
 }

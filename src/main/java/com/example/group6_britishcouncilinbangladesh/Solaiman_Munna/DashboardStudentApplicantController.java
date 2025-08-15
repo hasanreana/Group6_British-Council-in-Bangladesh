@@ -17,11 +17,6 @@ public class DashboardStudentApplicantController
     }
 
     @javafx.fxml.FXML
-    public void DownloadAdmitCardButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("", actionEvent);
-    }
-
-    @javafx.fxml.FXML
     public void MakePaymentButton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/MakePaymentStuA.fxml", actionEvent);
     }
@@ -54,5 +49,10 @@ public class DashboardStudentApplicantController
     @javafx.fxml.FXML
     public void WithdrawApplicationButton(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/WithdrawApplicationStuA.fxml", actionEvent);
+    }
+
+    @javafx.fxml.FXML
+    public void CancelTextBookingButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("/com/example/group6_britishcouncilinbangladesh/Solaiman_Munna/CancelIELTSStuA.fxml", actionEvent);
     }
 }
