@@ -18,22 +18,19 @@
       </Text>
       <TableView fx:id="VerifyStudentTableView" layoutX="14.0" layoutY="79.0" prefHeight="305.0" prefWidth="290.0">
         <columns>
-          <TableColumn fx:id="NameColVT" prefWidth="75.0" text="Name" />
-          <TableColumn fx:id="PassportColVt" prefWidth="75.0" text="Passport No." />
-            <TableColumn fx:id="StatusColVT" prefWidth="75.0" text="Status" />
+          <TableColumn fx:id="NameColVT" prefWidth="124.0" text="Name" />
+          <TableColumn fx:id="PassportColVt" prefWidth="84.0" text="Passport No." />
+            <TableColumn fx:id="StatusColVT" prefWidth="83.20001220703125" text="Status" />
         </columns>
-         <columnResizePolicy>
-            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-         </columnResizePolicy>
       </TableView>
       <ComboBox fx:id="StatusCombobox" layoutX="360.0" layoutY="158.0" prefHeight="26.0" prefWidth="201.0" promptText="Status" />
       <Label fx:id="NameLabel" layoutX="381.0" layoutY="117.0" prefHeight="18.0" prefWidth="158.0" />
-      <Button layoutX="370.0" layoutY="232.0" mnemonicParsing="false" onAction="#EditButtonVT" prefHeight="50.0" prefWidth="66.0" text="Edit">
+      <Button fx:id="EditButton" layoutX="370.0" layoutY="232.0" mnemonicParsing="false" onAction="#EditButtonVT" prefHeight="50.0" prefWidth="66.0" text="Edit">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="482.0" layoutY="232.0" mnemonicParsing="false" onAction="#UpdateButtonVT" prefHeight="50.0" prefWidth="66.0" text="Update">
+      <Button fx:id="UpdateButton" layoutX="482.0" layoutY="232.0" mnemonicParsing="false" onAction="#UpdateButtonVT" prefHeight="50.0" prefWidth="66.0" text="Update">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

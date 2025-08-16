@@ -29,5 +29,6 @@ public class MakePaymentStuAController
 
     @javafx.fxml.FXML
     public void VerificationButton(ActionEvent actionEvent) {
+        AlertLabelPayment.setText("Your data has been recorded. \nWe will soon update your Payment details");
     }
 }
