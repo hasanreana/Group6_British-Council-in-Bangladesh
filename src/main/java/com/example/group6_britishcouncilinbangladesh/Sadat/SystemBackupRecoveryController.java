@@ -12,17 +12,20 @@ public class SystemBackupRecoveryController {
     private ComboBox<String> backupScopeComboBox;
 
     @FXML
-    private Button initiateBackupButton;
-
-    @FXML
     private ProgressBar backupProgressBar;
-
-    @FXML
-    private Button recoverBackupButton;
 
     @FXML
     private Label messageLabel;
 
+    @FXML
+    private Button initiateBackupButton;  // Needed for enabling/disabling
+    @FXML
+    private Button recoverBackupButton;   // Needed for enabling/disabling
+
+    /**
+     * Handles the backup initiation process with simulated progress.
+     */
+    @FXML
     public void handleInitiateBackup() {
         String backupScope = backupScopeComboBox.getValue();
 
@@ -32,38 +35,51 @@ public class SystemBackupRecoveryController {
         }
 
         messageLabel.setText("🕐 Backup in progress...");
+        disableButtons(true);
 
-        // Simulate backup progress
         Timeline timeline = new Timeline(
                 new KeyFrame(Duration.seconds(0), e -> backupProgressBar.setProgress(0)),
                 new KeyFrame(Duration.seconds(5), e -> backupProgressBar.setProgress(0.5)),
                 new KeyFrame(Duration.seconds(10), e -> backupProgressBar.setProgress(1))
         );
+
         timeline.setCycleCount(1);
         timeline.play();
 
-        timeline.setOnFinished(event -> messageLabel.setText("✅ Backup completed successfully!"));
+        timeline.setOnFinished(event -> {
+            messageLabel.setText("✅ Backup completed successfully!");
+            disableButtons(false);
+        });
     }
 
-    // Handle recovering the backup
+    /**
+     * Handles the recovery process with simulated progress.
+     */
     @FXML
     public void handleRecoverBackup() {
         messageLabel.setText("🕐 Recovering backup...");
+        disableButtons(true);
 
-        // Simulate backup recovery progress
         Timeline timeline = new Timeline(
                 new KeyFrame(Duration.seconds(0), e -> backupProgressBar.setProgress(0)),
                 new KeyFrame(Duration.seconds(5), e -> backupProgressBar.setProgress(0.5)),
                 new KeyFrame(Duration.seconds(10), e -> backupProgressBar.setProgress(1))
         );
+
         timeline.setCycleCount(1);
         timeline.play();
 
-        timeline.setOnFinished(event -> messageLabel.setText("✅ Backup recovered successfully!"));
+        timeline.setOnFinished(event -> {
+            messageLabel.setText("✅ Backup recovered successfully!");
+            disableButtons(false);
+        });
     }
 
+    /**
+     * Utility method to disable or enable buttons during processing.
+     */
+    private void disableButtons(boolean disable) {
+        initiateBackupButton.setDisable(disable);
+        recoverBackupButton.setDisable(disable);
+    }
 }
-
-
-
-

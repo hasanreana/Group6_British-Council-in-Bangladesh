@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.group6_britishcouncilinbangladesh.Sadat.LogInController"
+           stylesheets="@login.css">
+
+    <children>
+        <VBox alignment="CENTER" spacing="16" maxWidth="420">
+            <padding>
+                <Insets top="28" right="36" bottom="28" left="36"/>
+            </padding>
+
+            <Label text="Sign in to your account"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+            <Label text="Please enter your username and password to log in"
+                   wrapText="true"
+                   textAlignment="CENTER"
+                   style="-fx-text-fill: #6b7b8c;" />
+
+            <TextField fx:id="usernameField"
+                       promptText="USERNAME"
+                       maxWidth="Infinity" />
+
+            <PasswordField fx:id="passwordField"
+                           promptText="PASSWORD"
+                           maxWidth="Infinity" />
+
+            <Button text="Login"
+                    onAction="#handleLogin"
+                    maxWidth="Infinity" />
+
+            <Label fx:id="loginMsg"
+                   wrapText="true"
+                   style="-fx-text-fill: #e74c3c;" /> <!-- default to red for error -->
+        </VBox>
+    </children>
+</StackPane>

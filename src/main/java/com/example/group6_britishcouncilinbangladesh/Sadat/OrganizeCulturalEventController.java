@@ -39,4 +39,6 @@ public class OrganizeCulturalEventController {
         } catch (NumberFormatException e) {
             messageLabel.setText("❌ Budget must be a valid number.");
 
+        }
+    }
 }

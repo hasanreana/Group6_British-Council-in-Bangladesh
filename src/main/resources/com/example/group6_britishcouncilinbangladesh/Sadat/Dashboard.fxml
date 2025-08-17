@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.group6_britishcouncilinbangladesh.Sadat.DashboardController">
+
+    <top>
+        <ToolBar>
+            <Button text="Backup &amp; Recovery" onAction="#openBackup"/>
+            <Button text="Security Audit" onAction="#openSecurityAudit"/>
+            <Button text="Event Log" onAction="#openEventLog"/>
+            <Pane HBox.hgrow="ALWAYS"/> <!-- spacer to push welcomeLabel to right -->
+            <Label fx:id="welcomeLabel" />
+        </ToolBar>
+    </top>
+
+
+    <center>
+        <StackPane fx:id="contentArea"/>
+    </center>
+</BorderPane>
+

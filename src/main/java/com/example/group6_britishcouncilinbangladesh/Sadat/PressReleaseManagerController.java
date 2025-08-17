@@ -47,7 +47,7 @@ public class PressReleaseManagerController {
             return;
         }
 
-    }
+
         messageLabel.setText("✅ Press Release submitted successfully!");
    }
 }

@@ -38,5 +38,5 @@ public class HardwareIssueResolverController {
         }
 
         messageLabel.setText("✅ Ticket " + ticketId + " resolved with " + priority + " priority.");
-
+    }
 }
